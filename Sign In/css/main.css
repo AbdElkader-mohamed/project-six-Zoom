@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Golos Text', sans-serif,serif;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.container {
+    margin: 0 auto;
+    padding: 0 60px;
+    max-width: 1250px;
+}
+header {
+    padding: 20px 0;
+    border-bottom: 1px solid #ebebeb;
+}
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .img{
+    width: 110px;
+}
+header ul {
+    display: flex;
+    align-items: center;
+}
+header ul li {
+    margin-left: 16px;
+    color: #232333;
+    font-weight: 400;
+}
+header ul li a {
+    color: #0956b5;
+    padding: 6px 12px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: .6s;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -ms-transition: .6s;
+    -o-transition: .6s;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+header ul li:last-of-type a{
+    display: flex;
+    align-items: center;
+
+}
+header ul li a:hover {
+    background-color: #f2f8ff;
+}
+section .container {
+    padding: 0;
+    display: flex;
+}
+section .img{
+    position: relative;
+    text-align: center;
+    width: 40%;
+    background-color: #f7f9fa;
+}
+section .img img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+section .form{
+    width: 60%;
+    padding:25px 0 35px 0 ;
+}
+section .form h1 {
+    text-align: center;
+    font-weight: 600;
+    color: #131619;
+    margin-bottom: 34px;
+    font-size: 34px;
+    letter-spacing: 3px;
+
+}
+section .form form {
+    margin: 0 auto;
+    width: 340px;
+}
+section .form form input:not(input[type=checkbox]) {
+    border: none;
+    border: 1px solid #444b53;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    color: #6e7680;
+    padding: 14px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+section .form form input:not([type=checkbox]):focus {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #0e72ed;
+}
+section .form form .go {
+    display: block;
+    padding: 10px;
+    border: none;
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    background-color: #0e72ed;
+    color: #fff;
+    margin-bottom: 24px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+section .form form .go:hover {
+    background-color: #0956b5;
+}
+section .form form .forgot {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-bottom: 10px;
+}
+section .form form .forgot a {
+    color: #0956b5;
+    font-size: 14px;
+    font-weight: 500;
+}
+section .form form .forgot a i {
+    font-size: 14px;
+    vertical-align: bottom;
+    margin-left: 4px;
+}
+section .form form p {
+    font-size: 14px;
+    color: #747487;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+section .form form p a{
+    color: #0956b5;
+    font-size: 15px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+section .form form p a:hover{
+    text-decoration: underline;
+}
+section .form form .checkbox input {
+    width:18px;
+    height:18px;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: #0956b5;
+    vertical-align: bottom;
+}
+section .form form .checkbox input:focus {
+    appearance: none;
+    background-color: #0e72ed;
+}
+section .form form .checkbox {
+    font-size: 15px;
+    color: #131619;
+}
+section .form form .or {
+    text-align: center;
+    margin: 35px 0 15px ;
+    position: relative;
+    font-size: 14px;
+    color: #747487;
+    background-color: #fff;
+}
+section .form form .or::before, 
+section .form form .or::after {
+    content: '';
+    position: absolute;
+    top: 9px;
+    height: 2px;
+    width: 105px;
+    background-color: #ededf4;
+}
+section .form form .or::before {
+    left: 0;
+}
+section .form form .or::after {
+    right: 0;
+}
+section .form form .social {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+section .form form .social a{
+    color: #0404138f;
+    margin: 20px 0 30px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+section .form form .social a:hover div {
+    background-color: #efeff4;
+}
+section .form form .social a:hover {
+    color: #131619;
+}
+
+section .form form .social a div {
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 55px;
+    border: 1px solid #52528017;
+    font-size:14px ;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin: 0 auto 10px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}

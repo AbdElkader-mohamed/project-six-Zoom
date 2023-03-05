@@ -1,0 +1,133 @@
+section .material-symbols-outlined{
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 100,
+    'GRAD' 0,
+    'opsz' 2 ;
+  }
+  section .container {
+    padding: 0;
+      display: flex;
+      height:calc(100vh - 56px);
+    }
+    aside {
+    width: 30%;
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+    border-right:2px solid #ededf4 ;
+  }
+  aside .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px;
+    font-size: 14px;
+  }
+  aside .top > div {
+    display: flex;
+    background-color: #ededf4;
+    border-radius: 10px 0 0 10px;
+    -webkit-border-radius: 10px 0 0 10px;
+    -moz-border-radius: 10px 0 0 10px;
+    -ms-border-radius: 10px 0 0 10px;
+    -o-border-radius: 10px 0 0 10px;
+} 
+  aside .top span {
+  display: block;
+  background-color: #ededf4;
+  border: 2px solid #ededf4;
+  padding:4px 8px;
+  font-size: 12px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+aside .top span:first-of-type {
+    background-color: #fff;
+}
+aside .top span:last-of-type {
+    margin-right: -7px;
+    border-radius: 0 10px 10px 0 ;
+    -webkit-border-radius: 0 10px 10px 0 ;
+    -moz-border-radius: 0 10px 10px 0 ;
+    -ms-border-radius: 0 10px 10px 0 ;
+    -o-border-radius: 0 10px 10px 0 ;
+}
+aside .top i {
+    border-radius: 5px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+aside .top i:hover {
+    background-color: #eee;
+}
+  aside .top i:first-of-type,
+  aside .top span:first-of-type {
+  color: #0e72ed; /* main color*/
+  cursor: pointer;
+}
+  aside .top i:last-of-type,
+  aside .top span:last-of-type {
+  color: #747487; /* main color*/
+  cursor: pointer;
+}
+aside h3 {
+    color: #333;
+    padding:10px 20px;
+    font-size: 15px;
+}
+aside ul li {
+    display: flex;
+    position: relative;
+    font-size: 12px;
+    justify-content: space-between;
+    padding: 10px 10px 10px 30px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+aside ul li::before {
+    font-family:'Material Symbols Outlined' ;
+    content: '\e409';
+    position: absolute;
+    left: 10px;
+    font-size: 15px;
+    line-height: 15px;
+}
+aside ul li:hover {
+    background-color: #eee;
+}
+  section .main {
+      width: 80%;
+      position: relative;
+      text-align: center;
+  }
+  section .main > div {
+      width: 350px;
+      font-size: 13px;
+      color: #777;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      -webkit-transform: translate(-50%,-50%);
+      -moz-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+      -o-transform: translate(-50%,-50%);
+  }
+  section .main div div {
+      width: 130px;
+      margin: 25px auto;
+  }
